@@ -1,0 +1,28 @@
+﻿.navbar_section {
+    background-color: $color-dark-grey;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      
+
+        h1 {
+            font-size: 30px;
+           
+        }
+
+        .navbar_links {
+            .navlink {
+                color: $color-white;
+                text-decoration: none;
+                padding-right: 20px;
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-offset: 8px;
+                }
+            }
+        }
+    }
+}

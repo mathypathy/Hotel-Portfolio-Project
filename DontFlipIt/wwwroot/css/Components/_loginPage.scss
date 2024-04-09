@@ -1,0 +1,42 @@
+﻿.login_form {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
+
+        .login_page_title {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: $color-white;
+        }
+
+        form {
+
+            .form-control {
+                width: 350px;
+            }
+        }
+
+        .signup_here {
+            margin-top: 20px;
+            color: $color-white;
+
+            a {
+                color: $color-dark-grey;
+                text-decoration: none;
+
+                &:hover {
+                    color: $color-lighter-grey;
+                    text-decoration: underline;
+                    text-underline-offset:5px;
+                }
+            }
+        }
+
+        button {
+            margin-top: 20px;
+        }
+    }
+}

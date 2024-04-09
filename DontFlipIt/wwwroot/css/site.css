@@ -1,0 +1,68 @@
+﻿body {
+  background: linear-gradient(to right, #C1C8E4, #84CEEB, #8860D0);
+}
+
+h1 {
+  color: #ffffff;
+}
+
+.btn {
+  background-color: #24292e;
+  border: none;
+  color: #ffffff;
+}
+.btn:hover {
+  background-color: #41464a;
+}
+
+.navbar_section {
+  background-color: #24292e;
+}
+.navbar_section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar_section .container h1 {
+  font-size: 30px;
+}
+.navbar_section .container .navbar_links .navlink {
+  color: #ffffff;
+  text-decoration: none;
+  padding-right: 20px;
+}
+.navbar_section .container .navbar_links .navlink:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.login_form .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+.login_form .container .login_page_title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #ffffff;
+}
+.login_form .container form .form-control {
+  width: 350px;
+}
+.login_form .container .signup_here {
+  margin-top: 20px;
+  color: #ffffff;
+}
+.login_form .container .signup_here a {
+  color: #24292e;
+  text-decoration: none;
+}
+.login_form .container .signup_here a:hover {
+  color: #41464a;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.login_form .container button {
+  margin-top: 20px;
+}

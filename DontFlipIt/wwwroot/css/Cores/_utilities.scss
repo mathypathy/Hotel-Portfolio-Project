@@ -1,0 +1,17 @@
+﻿body {
+    background: linear-gradient(to right, $color-light, $color-light-cyan, $color-purple);
+}
+
+h1{
+    color:$color-white;
+}
+
+.btn {
+    background-color: $color-dark-grey;
+    border: none;
+    color: $color-white;
+
+    &:hover {
+       background-color:$color-lighter-grey;
+    }
+}
