@@ -6,7 +6,7 @@ Sign up, enter questions/answers in a form, generate the cards, and dont flip it
 Tech: 
 
 Frontend: 
-HTML5
+HTML5,
 CSS3 ( Bootstrap) 
 
 BackEnd:
