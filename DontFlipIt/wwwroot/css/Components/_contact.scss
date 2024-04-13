@@ -1,0 +1,23 @@
+﻿.contact_section {
+    .container {
+        text-align:center;
+        h1 {
+            color: $color-white;
+            margin-top: 15px;
+        }
+
+        p {
+            color: $color-white;
+            margin-top: 20px;
+        }
+
+      
+        .form-label{
+            margin-top:30px;
+            margin-bottom:0;
+        }
+        textarea {
+            resize: none;
+        }
+    }
+}

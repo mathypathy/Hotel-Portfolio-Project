@@ -1,0 +1,32 @@
+﻿
+
+footer {
+    background-color: $color-dark-grey;
+    height: 150px;
+    margin-top: auto;
+
+    .container {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 10px;
+
+        .hotel_info {
+
+            h1 {
+                font-size: 18px;
+                color: white;
+                margin-top:20px;
+            }
+
+            i {
+                padding-right: 10px;
+            }
+
+            .footer_rights{
+                margin-top:20px;
+                font-size:14px;
+            }
+        }
+    }
+}

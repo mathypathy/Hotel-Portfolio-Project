@@ -3,12 +3,14 @@
 <!-- Header Menu-->
 <section class="navbar_section">
     <div class="container">
-        <h1>Dont Flip it</></h1>
+        <h1 class="navbar_title">Hotelname</></h1>
         <!-- Header links-->
         <div class="navbar_links">
-            <a href="#" class="navlink">Home</a>
-            <a href="#" class="navlink">About</a>
-            <a href="#" class="navlink">Contact</a>
+            <a href="@Url.Action("Index", "Home")" class="navlink">Home</a>
+            <a href="#" class="navlink">Rooms & Suits</a>
+            <a href="#" class="navlink">Facilities & Services</a>
+            <a href="@Url.Action("Index","About")" class="navlink">About Us</a>
+            <a href="@Url.Action("Index","Contact")" class="navlink">Contact</a>
             <a href="@Url.Action("Index", "Authentication")" class="navlink">Login</a>
         </div>
     </div>

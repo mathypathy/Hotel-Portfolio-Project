@@ -1,7 +1,15 @@
+using DontFlipIt.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<DontFlipIt.Context.AppContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("")));
+builder.Services.AddIdentity<MemberEntity, IdentityRole>().AddEntityFrameworkStores<DontFlipIt.Context.AppContext>();
+
+
 
 var app = builder.Build();
 

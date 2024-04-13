@@ -1,17 +1,57 @@
 ﻿body {
-    background: linear-gradient(to right, $color-light, $color-light-cyan, $color-purple);
-}
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../Images/Images1.jpg');
+    transition: background-image 1s ease;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
-h1{
-    color:$color-white;
-}
+ 
 
-.btn {
-    background-color: $color-dark-grey;
-    border: none;
-    color: $color-white;
 
-    &:hover {
-       background-color:$color-lighter-grey;
+
+    .btn {
+        background-color: $color-black;
+        border: none;
+        color: $color-white;
+        font-weight: bold;
+
+        &:hover {
+           // background-color: $color-lighter-grey;
+           background-color:$color-vanilla-white;
+           color:black;
+        }
+    }
+
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+        //background-color: $color-white;
+        background-color: rgba($color-dark-grey, 0.8);
+        width: 30%;
+        height: 550px;
+        border-radius: 2%;
+        //fanns ej här från start
+        backdrop-filter: blur(5px);
+    }
+
+
+    form {
+        color: $color-white;
+
+        .form-control {
+            // ta bort detta sen också om det ej blir bra
+            background-color: rgba($color-dark-grey, 0.8);
+            width: 350px;
+            margin-top: 15px;
+            border: none;
+            border-bottom: 1px solid black;
+            border-radius: 0;
+        }
     }
 }

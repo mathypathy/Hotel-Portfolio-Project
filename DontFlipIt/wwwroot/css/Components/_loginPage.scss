@@ -1,42 +1,124 @@
-﻿.login_form {
+﻿
+.login_form {
+
+
 
     .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 150px;
+        // ändra widthen på mobil sen,just nu ser de fked ut.
+
+
 
         .login_page_title {
+            margin-top: 30px;
             margin-bottom: 20px;
             font-size: 24px;
+            font-weight: bold;
+            //color: $color-lighter-grey;
             color: $color-white;
         }
 
-        form {
 
-            .form-control {
-                width: 350px;
+
+        .forgot_password {
+            padding-left: 160px;
+            margin-top: 10px;
+
+            a {
+                //color: $color-dark-grey;
+                color: $color-white;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-offset: 5px;
+                    color: $color-vanilla-white;
+                }
             }
         }
 
         .signup_here {
             margin-top: 20px;
-            color: $color-white;
+            //color: $color-lighter-grey;
+            color:$color-white;
 
             a {
-                color: $color-dark-grey;
+                //color: $color-dark-grey;
+                color:$color-white;
                 text-decoration: none;
 
                 &:hover {
-                    color: $color-lighter-grey;
+                   // color: $color-lighter-grey;
+                   color:$color-vanilla-white;
                     text-decoration: underline;
-                    text-underline-offset:5px;
+                    text-underline-offset: 5px;
                 }
             }
         }
 
         button {
-            margin-top: 20px;
+            //margin-top: 20px;
+            margin-top: 10px;
+            background-color: $color-black;
+
+            &:hover {
+                background-color: $color-vanilla-white;
+                color: $color-black;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+
+        .social_media {
+            text-align: center;
+
+            h6 {
+                color:$color-white;
+                margin-top: 45px;
+            }
+
+            .fb {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                font-size: 20px;
+                background-color: $color-facebook;
+                color: $color-white;
+                border: none;
+
+                &:hover {
+                    background-color: $color-facebook-hover;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+
+            .x {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                font-size: 20px;
+                background-color: $color-x;
+                color: $color-white;
+                border: none;
+
+                &:hover {
+                    background-color: $color-x-hover;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+
+            .google {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                font-size: 20px;
+                background-color: $color-Google;
+                color: $color-white;
+                border: none;
+
+                &:hover {
+                    background-color: $color-Google-hover;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
         }
     }
 }

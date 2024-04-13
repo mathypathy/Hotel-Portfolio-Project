@@ -1,0 +1,38 @@
+﻿.about_section {
+    h1 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .container {
+        
+        justify-content:space-between;
+        background-color: $color-white;
+        text-align:center;
+
+        .col-md-6{
+            margin:0;
+            padding:0;
+          
+        }
+
+        img{
+            margin-right:10px;
+            max-width:100%;
+            height:auto;
+            
+            
+        }
+        h2{
+            margin-top:40px;
+            text-decoration:underline;
+            text-underline-offset:5px;
+
+        }
+        h5{
+            text-align:center;
+        }
+      
+    }
+}

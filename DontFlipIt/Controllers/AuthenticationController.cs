@@ -12,14 +12,15 @@ namespace DontFlipIt.Controllers
 
 
 
-
-
         public IActionResult Register()
         {
             return View();
         }
 
-
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
 
 
     }
