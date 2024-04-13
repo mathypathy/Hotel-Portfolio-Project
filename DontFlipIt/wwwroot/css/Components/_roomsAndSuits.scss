@@ -1,0 +1,41 @@
+﻿.rooms_suits_section {
+    text-align: center;
+    background-color: rgba($color-dark-grey, 0.5);
+    backdrop-filter: blur(5px);
+    height:110vh;
+    border-radius:10px;
+    h1 {
+        padding-top:20px;
+        margin-top: 20px;
+        color: $color-white;
+        text-decoration:underline;
+        text-underline-offset:10px;
+        font-size:26px;
+    }
+
+    .container {
+        display: grid;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 40px;
+
+
+        .card {
+
+            h5 {
+                margin-top: 10px;
+            }
+
+            .card-body {
+                display: flex;
+                justify-content: space-evenly;
+
+
+
+                i {
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}

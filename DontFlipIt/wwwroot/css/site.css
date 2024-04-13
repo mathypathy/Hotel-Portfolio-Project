@@ -57,15 +57,23 @@ body form .form-control {
   padding-top: 5px;
 }
 .navbar_section .container .navbar_links .navlink {
-  color: #ffffff;
+  position: relative;
   text-decoration: none;
-  padding-right: 20px;
+  color: #ffffff;
+  margin-right: 10px;
 }
-.navbar_section .container .navbar_links .navlink:hover {
-  color: #F3E5AB;
-  text-decoration: underline;
-  text-underline-offset: 8px;
-  transition: all 0.2s ease-in-out;
+.navbar_section .container .navbar_links .navlink::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #F3E5AB;
+  transition: width 0.3s ease;
+}
+.navbar_section .container .navbar_links .navlink:hover::before {
+  width: 100%;
 }
 
 .login_form .container .login_page_title {
@@ -253,6 +261,7 @@ footer .container .hotel_info .footer_rights {
   height: 200px;
   width: 600px;
   backdrop-filter: blur(5px);
+  border-radius: 10px;
 }
 .landingpage_section .container .landing_title {
   color: #ffffff;
@@ -264,7 +273,7 @@ footer .container .hotel_info .footer_rights {
 .landingpage_section .container .landingbutton:hover {
   background-color: #F3E5AB;
   color: #000000;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .contact_section .container {
@@ -284,4 +293,36 @@ footer .container .hotel_info .footer_rights {
 }
 .contact_section .container textarea {
   resize: none;
+}
+
+.rooms_suits_section {
+  text-align: center;
+  background-color: rgba(36, 41, 46, 0.5);
+  backdrop-filter: blur(5px);
+  height: 110vh;
+  border-radius: 10px;
+}
+.rooms_suits_section h1 {
+  padding-top: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  font-size: 26px;
+}
+.rooms_suits_section .container {
+  display: grid;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 40px;
+}
+.rooms_suits_section .container .card h5 {
+  margin-top: 10px;
+}
+.rooms_suits_section .container .card .card-body {
+  display: flex;
+  justify-content: space-evenly;
+}
+.rooms_suits_section .container .card .card-body i {
+  margin: 5px;
 }

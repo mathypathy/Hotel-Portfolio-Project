@@ -17,6 +17,16 @@
         }, 3000); // Change background image every 3 seconds (adjust as needed)
     }
 
-   if (window.location.pathname === '/') {
+if (window.location.pathname === '/') {
     rotateBackgroundImages();
 }
+if (window.location.pathname === "/RoomsAndSuits" ||
+    window.location.pathname === "/Authentication" ||
+    window.location.pathname === "/Contact" 
+ // add forgot password aswell here and signup. 
+)  {
+    // Change background image
+    document.body.style.backgroundImage = "url(Images/suitsbg.jpg)";
+}
+
+

@@ -18,16 +18,26 @@
 
         .navbar_links {
             .navlink {
-                color: $color-white;
+                position: relative;
                 text-decoration: none;
-                padding-right: 20px;
+                color: $color-white;
+                margin-right:10px;
+            }
 
-                &:hover {
-                    color:$color-vanilla-white;
-                    text-decoration: underline;
-                    text-underline-offset: 8px;
-                    transition:all 0.2s ease-in-out;
-                }
+            .navlink::before {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: $color-vanilla-white;
+                transition: width 0.3s ease;
+            }
+
+            .navlink:hover::before {
+             
+                width: 100%;
             }
         }
     }
