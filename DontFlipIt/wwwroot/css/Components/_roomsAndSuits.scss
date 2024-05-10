@@ -1,6 +1,6 @@
 ﻿.rooms_suits_section {
     text-align: center;
-    background-color: rgba($color-dark-grey, 0.5);
+    background-color: rgba($color-dark-grey, 0.8);
     backdrop-filter: blur(5px);
     height:110vh;
     border-radius:10px;
@@ -26,11 +26,16 @@
                 margin-top: 10px;
             }
 
+            img{
+                max-width:100%;
+                height:200px;
+            }
             .card-body {
                 display: flex;
                 justify-content: space-evenly;
 
 
+               
 
                 i {
                     margin: 5px;
@@ -38,4 +43,5 @@
             }
         }
     }
+ 
 }

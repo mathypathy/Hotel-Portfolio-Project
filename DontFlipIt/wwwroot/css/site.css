@@ -9,14 +9,14 @@
   min-height: 100vh;
 }
 body .btn {
-  background-color: #000000;
+  background-color: #F3E5AB;
+  color: #000000;
   border: none;
-  color: #ffffff;
   font-weight: bold;
 }
 body .btn:hover {
-  background-color: #F3E5AB;
-  color: black;
+  background-color: #000000;
+  color: #ffffff;
 }
 body .form-container {
   display: flex;
@@ -111,11 +111,8 @@ body form .form-control {
 }
 .login_form .container button {
   margin-top: 10px;
-  background-color: #000000;
 }
 .login_form .container button:hover {
-  background-color: #F3E5AB;
-  color: #000000;
   transition: all 0.2s ease-in-out;
 }
 .login_form .container .social_media {
@@ -268,12 +265,60 @@ footer .container .hotel_info .footer_rights {
 }
 .landingpage_section .container .landingbutton {
   margin-top: 10px;
-  background-color: #000000;
+  color: #000000;
+  background-color: #F3E5AB;
+  margin: 8px;
 }
 .landingpage_section .container .landingbutton:hover {
-  background-color: #F3E5AB;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
   transition: all 0.3s ease-in-out;
+}
+.landingpage_section .container h6 {
+  color: #ffffff;
+}
+.landingpage_section .container .stars {
+  color: #ffd250;
+}
+
+.checknow .container {
+  margin-top: 48px;
+  background-color: rgba(36, 41, 46, 0.8);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  width: 600px;
+  height: 100px;
+}
+.checknow .container form {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.checknow .container form .form-label {
+  margin-top: 10px;
+  padding: 0;
+  font-weight: bold;
+}
+.checknow .container form .form-control {
+  text-align: center;
+  width: 150px;
+  margin-bottom: 55px;
+  padding: 0;
+  margin: 0;
+  height: 30px;
+  background-color: #ffffff;
+  font-size: 12px;
+}
+.checknow .container form button {
+  margin-top: 40px;
+  color: #000000;
+  background-color: #F3E5AB;
+}
+.checknow .container form button:hover {
+  color: #ffffff;
+  background-color: #000000;
 }
 
 .contact_section .container {
@@ -297,7 +342,7 @@ footer .container .hotel_info .footer_rights {
 
 .rooms_suits_section {
   text-align: center;
-  background-color: rgba(36, 41, 46, 0.5);
+  background-color: rgba(36, 41, 46, 0.8);
   backdrop-filter: blur(5px);
   height: 110vh;
   border-radius: 10px;
@@ -319,10 +364,35 @@ footer .container .hotel_info .footer_rights {
 .rooms_suits_section .container .card h5 {
   margin-top: 10px;
 }
+.rooms_suits_section .container .card img {
+  max-width: 100%;
+  height: 200px;
+}
 .rooms_suits_section .container .card .card-body {
   display: flex;
   justify-content: space-evenly;
 }
 .rooms_suits_section .container .card .card-body i {
   margin: 5px;
+}
+
+.restaurant_section .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 300px;
+}
+.restaurant_section .container .leftside {
+  background-color: rgba(36, 41, 46, 0.8);
+  width: 400px;
+  height: 150px;
+  text-align: start;
+  align-content: center;
+  padding: 60px;
+  border-radius: 10px;
+}
+.restaurant_section .container .leftside h2 {
+  color: #ffffff;
+}
+.restaurant_section .container .leftside button {
+  margin-right: 10px;
 }

@@ -8,20 +8,21 @@
     flex-direction: column;
     min-height: 100vh;
 
- 
+
 
 
 
     .btn {
-        background-color: $color-black;
+        background-color: $color-vanilla-white;
+        color: $color-black;
         border: none;
-        color: $color-white;
+       
         font-weight: bold;
 
         &:hover {
-           // background-color: $color-lighter-grey;
-           background-color:$color-vanilla-white;
-           color:black;
+            // background-color: $color-lighter-grey;
+            background-color: $color-black;
+            color: $color-white;
         }
     }
 
@@ -31,12 +32,10 @@
         flex-direction: column;
         align-items: center;
         margin-top: 80px;
-        //background-color: $color-white;
         background-color: rgba($color-dark-grey, 0.8);
         width: 30%;
         height: 550px;
         border-radius: 2%;
-        //fanns ej här från start
         backdrop-filter: blur(5px);
     }
 
@@ -53,5 +52,6 @@
             border-bottom: 1px solid black;
             border-radius: 0;
         }
+      
     }
 }

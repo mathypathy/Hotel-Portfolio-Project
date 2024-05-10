@@ -20,13 +20,20 @@
 if (window.location.pathname === '/') {
     rotateBackgroundImages();
 }
-if (window.location.pathname === "/RoomsAndSuits" ||
-    window.location.pathname === "/Authentication" ||
-    window.location.pathname === "/Contact" 
- // add forgot password aswell here and signup. 
-)  {
-    // Change background image
-    document.body.style.backgroundImage = "url(Images/suitsbg.jpg)";
-}
 
-
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.location.pathname === "/RoomsAndSuits" ||
+        window.location.pathname === "/Authentication" ||
+        window.location.pathname === "/Contact" ||
+        window.location.pathname === "/ForgotPassword" ||
+        window.location.pathname === "/Authentication/ForgotPassword" ||
+        window.location.pathname === "/Authentication/Register")
+    {
+        // Change background image
+        document.body.style.backgroundImage = "url(/Images/suitsbg.jpg)";
+    }
+    else if(window.location.pathname === "/Restaurant") {
+        document.body.style.backgroundImage = "url(/Images/pexels-quark-studio-3201921.jpg)";
+    }
+})
+  

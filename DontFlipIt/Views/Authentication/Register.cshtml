@@ -4,32 +4,31 @@
 <section class="sign_up_section">
     <div class="container form-container">
         <h2>Join thousands of others and<br /><span>and book your first stay!</span></h2>
-        <form method="post" novalidate>
+        <form method="post" asp-action="RegisterForm" asp-controller="Authentication" enctype="application/x-www-form-urlencoded" novalidate>
+            @Html.AntiForgeryToken()
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Your firstname..">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Your firstname.." name="Firstname">
                 <label for="floatingInput">Firstname</label>
             </div>
             <div class="form-floating">
-                <input type="text" class="form-control" id="floatingPassword" placeholder="Your Lastname..">
+                <input type="text" class="form-control" id="floatingName" placeholder="Your Lastname.." name="Lastname">
                 <label for="floatingPassword">Lastname</label>
             </div>
-
             <div class="form-floating">
-                <input type="Email" class="form-control" id="floatingPassword" placeholder="Email..">
+                <input type="Email" class="form-control" id="floatingEmail" placeholder="Email.." name="Email">
                 <label for="floatingPassword">Email</label>
             </div>
-
             <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password..">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password.." name="Password">
                 <label for="floatingPassword">Password</label>
             </div>
-
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Confirm Password..">
-                <label for="floatingPassword">Confirm Password</label>
+            <div class="row">
+                <div class="col text-center">
+                    <button class="btn-primary btn" type="submit">Register</button>
+                </div>
             </div>
         </form>
-        <button class="btn-primary btn">Register</button>
+     
         <h5><a href="@Url.Action("Index","Authentication")"><i class="fa-solid fa-arrow-left-long"></i></a></h5>
     </div>
    

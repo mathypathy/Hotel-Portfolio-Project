@@ -1,0 +1,2 @@
+﻿Ändra knappen i registerformuläret så den stämmer. 
+få registerform att fungera som det ska, man hamnar ej i db atm? 

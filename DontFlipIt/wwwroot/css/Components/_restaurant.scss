@@ -1,0 +1,32 @@
+﻿.restaurant_section {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin-top:300px;
+        
+
+        .leftside {
+            background-color: rgba($color-dark-grey, 0.8);
+            width:400px;
+            height:150px;
+            text-align:start;
+            align-content:center;
+            padding:60px;
+            border-radius:10px;
+            
+
+            h2 {
+                color: $color-white;
+               
+            }
+
+            button{
+               margin-right:10px;
+            }
+        }
+
+        .rightside {
+           
+        }
+    }
+}

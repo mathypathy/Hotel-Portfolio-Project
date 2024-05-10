@@ -1,7 +1,46 @@
-﻿<section class="landingpage_section">
+﻿
+@{
+}
+
+@{
+}
+<section class="landingpage_section">
     <div class="container">
+        <h6>Hotelname</h6>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+
         <h1 class="landing_title">Discover True Luxury</h1>
         <a href="@Url.Action("Index", "RoomsAndSuits")" class="btn-primary btn landingbutton">Book Now</a>
         <a href="@Url.Action("Index", "Contact")" class="btn-primary btn landingbutton">Contact Us</a>
+    </div>
+</section>
+<section class="checknow">
+    <div class="container">
+        <form method="post" novalidate>
+            <div class="form-group">
+                <label class="form-label">Check In</label>
+                <input type="date" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Check Out</label>
+                <input type="date" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Guests</label>
+                <input type="number" class="form-control">
+
+            </div>
+            <button class="btn-primary btn">Get Rates</button>
+        </form>
+
+
+
+
     </div>
 </section>
