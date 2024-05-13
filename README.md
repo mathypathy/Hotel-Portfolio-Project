@@ -13,5 +13,3 @@ CSS3 ( Bootstrap)
 BackEnd:
 C# (.NET)
 
-Database:
-PostgreSQL
